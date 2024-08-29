@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Paciente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <form id="cadastroForm">
+            <header class="form-header">
+                <h1>Cadastro de Paciente</h1>
+            </header>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nomeCompleto">Nome Completo:</label>
+                    <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nomeMae">Nome da Mãe:</label>
+                    <input type="text" id="nomeMae" name="nomeMae" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="naturalidade">Naturalidade:</label>
+                    <input type="text" id="naturalidade" name="naturalidade" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="profissao">Profissão:</label>
+                    <input type="text" id="profissao" name="profissao" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefoneFixo">Telefone Fixo:</label>
+                    <input type="tel" id="telefoneFixo" name="telefoneFixo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="celular">Celular:</label>
+                    <input type="tel" id="celular" name="celular" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="genero">Gênero:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="">Selecione</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="estadoCivil">Estado Civil:</label>
+                    <select id="estadoCivil" name="estadoCivil" required>
+                        <option value="">Selecione</option>
+                        <option value="Solteiro(a)">Solteiro(a)</option>
+                        <option value="Casado(a)">Casado(a)</option>
+                        <option value="Divorciado(a)">Divorciado(a)</option>
+                        <option value="Viúvo(a)">Viúvo(a)</option>
+                        <option value="Separado(a)">Separado(a)</option>
+                        <option value="União Estável">União Estável</option>
+                    </select>
+                </div>
+            </div>
+
+            <fieldset>
+                <legend>Endereço</legend>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="logradouro">Logradouro:</label>
+                        <input type="text" id="logradouro" name="logradouro" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="rua">Rua:</label>
+                        <input type="text" id="rua" name="rua" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" name="bairro" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="numero">Número:</label>
+                        <input type="text" id="numero" name="numero" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="complemento">Complemento:</label>
+                        <input type="text" id="complemento" name="complemento">
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="senha">Criar Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                    <div id="senhaRegras">
+                        <p id="senha-maiuscula" class="senha-regra">- Pelo menos uma letra maiúscula</p>
+                        <p id="senha-minuscula" class="senha-regra">- Pelo menos uma letra minúscula</p>
+                        <p id="senha-especial" class="senha-regra">- Pelo menos um caractere especial</p>
+                        <p id="senha-espaco" class="senha-regra">- Não pode ter espaços</p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmarSenha">Confirmar Senha:</label>
+                    <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+                </div>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
