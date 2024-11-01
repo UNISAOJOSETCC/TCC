@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Sessões</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+    <header>
+        <h1>Plataforma de Fisioterapia - Gestão de Sessões</h1>
+    </header>
+
+    <main>
+        <!-- Agenda de Sessões -->
+        <section id="agenda-sessoes">
+            <h2>Agenda de Sessões</h2>
+            <div id="calendario"></div>
+            <div id="filtros-visualizacao">
+                <label>Filtrar por:</label>
+                <select id="filtro-fisioterapeuta"></select>
+                <select id="filtro-paciente"></select>
+                <select id="filtro-tipo-sessao">
+                    <option value="">Tipo de Sessão</option>
+                    <option value="fisioterapia">Fisioterapia</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="avaliacao">Avaliação</option>
+                </select>
+                <select id="filtro-status-sessao">
+                    <option value="">Status da Sessão</option>
+                    <option value="confirmada">Confirmada</option>
+                    <option value="concluida">Concluída</option>
+                    <option value="cancelada">Cancelada</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Agendamento de Sessões -->
+        <section id="agendamento-sessoes">
+            <h2>Agendar Nova Sessão</h2>
+            <form id="form-agendar-sessao">
+                <label>Paciente:</label>
+                <select id="paciente"></select>
+                <label>Fisioterapeuta:</label>
+                <select id="fisioterapeuta"></select>
+                <label>Tipo de Sessão:</label>
+                <select id="tipo-sessao">
+                    <option value="fisioterapia">Fisioterapia</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="avaliacao">Avaliação</option>
+                </select>
+                <label>Data:</label>
+                <input type="date" id="data-sessao">
+                <label>Hora:</label>
+                <input type="time" id="hora-sessao">
+                <label>Duração (minutos):</label>
+                <input type="number" id="duracao-sessao" min="0">
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+
+        <!-- Histórico de Sessões -->
+        <section id="historico-sessoes">
+            <h2>Histórico de Sessões</h2>
+            <table>
+                <tr>
+                    <th>Data</th>
+                    <th>Tipo de Sessão</th>
+                    <th>Duração</th>
+                    <th>Observações</th>
+                    <th>Anexos</th>
+                </tr>
+                <!-- Exemplo de linha de histórico -->
+            </table>
+            <form id="form-notas-observacoes">
+                <label>Nota:</label>
+                <textarea></textarea>
+                <label>Anexar Arquivo:</label>
+                <input type="file">
+                <button type="submit">Salvar Nota</button>
+            </form>
+        </section>
+
+        <!-- Gestão de Status das Sessões -->
+        <section id="gestao-status">
+            <h2>Status das Sessões</h2>
+            <div id="painel-status">
+                <!-- Sessões com opção de atualização de status -->
+            </div>
+            <button id="Comparecido">Comparecido</button>
+            <!--trocar para radio buttom-->
+            <button id="Falta">Falta</button>
+            <!--trocar para radio buttom-->
+        </section>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
