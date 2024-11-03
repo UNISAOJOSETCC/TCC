@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestão de Sessões</title>
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles_sessoes.css">
 </head>
 
 <body>
     <header>
-        <h1>Plataforma de Fisioterapia - Gestão de Sessões</h1>
+        <h1>Vital Kinesio - Gestão de Sessões</h1>
     </header>
 
     <main>
@@ -72,7 +72,6 @@
                     <th>Observações</th>
                     <th>Anexos</th>
                 </tr>
-                <!-- Exemplo de linha de histórico -->
             </table>
             <form id="form-notas-observacoes">
                 <label>Nota:</label>
@@ -86,16 +85,13 @@
         <!-- Gestão de Status das Sessões -->
         <section id="gestao-status">
             <h2>Status das Sessões</h2>
-            <div id="painel-status">
-                <!-- Sessões com opção de atualização de status -->
-            </div>
-            <button id="Comparecido">Comparecido</button>
-            <!--trocar para radio buttom-->
-            <button id="Falta">Falta</button>
-            <!--trocar para radio buttom-->
+            <div id="painel-status"></div>
+            <label><input type="radio" name="status" value="comparecido"> Comparecido</label>
+            <label><input type="radio" name="status" value="falta"> Falta</label>
         </section>
+    </main>
 
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
